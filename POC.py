@@ -45,6 +45,6 @@ res_time=filtered_df.groupby("Sector").agg({'open':'mean','close':'mean','high':
 list_sector=["TRADE & SERVICES","LIFE SCIENCES"]
 res_time = res_time[res_time["Sector"].isin(list_sector)].reset_index(drop=True)
 print(res_time)
-path=r"C:\Users\rd070\OneDrive\Desktop\Data Engineering\stock analysis.csv"
+path=r"C:\Users\SARAVANA HYPERMART\Downloads\stock_project"
 res_time.to_csv(path,index=True)
 print("Poc Completed")
